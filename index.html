@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Forever Story ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 40px;
+        }
+
+        .section {
+            margin: 40px 20px;
+            padding: 30px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            line-height: 1.8;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 30px;
+            background-color: #ff2e63;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-bottom: 50px;
+        }
+
+        button:hover {
+            background-color: #e6004c;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .heart {
+            position: fixed;
+            bottom: -10px;
+            font-size: 20px;
+            animation: floatUp 5s linear infinite;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-100vh); opacity: 0; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 💕 Valentine Intro -->
+    <h1>Happy Valentine's Day My Love ❤️</h1>
+
+    <div class="section">
+        <h2>🌹 February 14 – Our Special Day</h2>
+        <p>
+            Happy Valentine’s Day to the most special person in my life.
+            Thank you for coming into my world and turning a simple prank call
+            into the most beautiful love story.
+            Every moment with you feels like a blessing.
+            Today is not just Valentine’s Day…
+            it’s a celebration of us. ❤️
+        </p>
+    </div>
+
+    <!-- 💌 Love Story Starts -->
+    <h1>Our Beautiful Love Journey ❤️</h1>
+
+    <div class="section">
+        <h2>📞 It Started With a Prank</h2>
+        <p>
+            It started as just a prank call… something silly, something casual.
+            I never knew that one small moment would slowly become the most important part of my life.
+            What began as a joke… turned into admiration.
+            And that admiration slowly turned into love.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>👀 Secretly Admiring You</h2>
+        <p>
+            I don’t know what exactly happened to me…
+            but suddenly, I always wanted to talk to you.
+            I waited for chances to see you in college.
+            Whenever you walked past me, my heart behaved differently.
+            Even a small eye contact used to make my whole day.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>📱 The Instagram Request</h2>
+        <p>
+            The day I found your Instagram ID and sent you a request…
+            that simple follow changed everything in my heart.
+            Every notification from you made me smile.
+            Even though you treated me like a friend,
+            I never had the courage to confess my feelings.
+            So I decided to stay as your friend… loving you silently.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>🛕 Our First Journey</h2>
+        <p>
+            Our first journey is something I will never forget.
+            That day was not just a trip… it was a feeling.
+            The way you took care of everything,
+            the way you made sure I was comfortable,
+            I felt safe. I felt important.
+            I didn’t say it then… but I was already falling for you.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>📅 December 3, 2022</h2>
+        <p>
+            December 3, 2022…
+            The day our friendship turned into a relationship.
+            I never expected you had feelings for me too.
+            That day changed us forever.
+            From that moment… you became mine.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>🔥 Our Fights & Our Love</h2>
+        <p>
+            We fight. We argue.
+            Sometimes I behave possessive because you are mine.
+            Even if I get angry, it lasts only 5 minutes.
+            Because staying angry with you hurts more than the reason.
+            No matter how many misunderstandings come,
+            at the end of the day… we always choose each other.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>🌸 My Heart</h2>
+        <p>
+            You don’t know how many times I think about you in a day.
+            Randomly smiling because of you.
+            Missing you even when we just met.
+            If life gives me a chance,
+            I want to spend more and more time with you.
+            More trips, more laughs, more memories… more “us”.
+        </p>
+    </div>
+
+    <!-- 💌 Surprise Button -->
+    <button onclick="showSurprise()">Click Here My Love 💌</button>
+
+    <div id="surprise" class="section hidden">
+        <h2>💍 Forever With You</h2>
+        <p>
+            From a prank call… to my forever person.
+            From strangers… to soulmates.
+            I love you more than you think.
+            More than my anger.
+            More than my ego.
+            More than anything.
+        </p>
+        <h3>I WILL ALWAYS CHOOSE YOU ❤️</h3>
+    </div>
+
+    <!-- 💖 Floating Hearts Script -->
+    <script>
+        function showSurprise() {
+            document.getElementById("surprise").classList.remove("hidden");
+        }
+
+        function createHeart() {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerText = "❤️";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.fontSize = Math.random() * 20 + 15 + "px";
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+
+        setInterval(createHeart, 500);
+    </script>
+
+</body>
+</html>
